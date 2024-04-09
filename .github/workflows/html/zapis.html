@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Парикмахерская "Чёрная кость"</title>
+    <link rel="stylesheet" href="./index.php">
+    <style>
+        .varela-round-regular {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(../img/123.jpg);
+        }
+        .header {
+            background-image: url(../img/1234.jpg) ;
+            color: #fff;
+            text-align: center;
+
+        }
+        .header_flex{
+            display: flex;
+            width: 20%;
+            margin: 0 auto;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        .service-item {
+            border: 1px solid #000;
+            padding: 20px;
+            width: 30%;
+            box-sizing: border-box;
+        }
+        .service-item h2 {
+            text-align: center;
+        }
+
+        .form-style {
+  background: #f4f7f8;
+  margin: 10px auto;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+.form-style h2 {
+  background: #303332;
+  padding: 20px 0;
+  font-size: 180%;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  margin: -20px -20px 20px -20px;
+}
+
+.form-style input[type=text],
+.form-style input[type=tel],
+.form-style input[type=datetime-local],
+.form-style select {
+  display: block;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  border-bottom: 2px solid #ddd;
+  border-top: 2px solid #ddd;
+  border-left: 1px solid #dcdcdc;
+  border-right: 1px solid #dcdcdc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.form-style input[type=submit] {
+  background: #2f3131;
+  padding: 5px 20px;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+}
+footer {
+    background-color: #22201e;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+h1{
+    font-family: "Varela Round", sans-serif;
+}
+    </style>
+</head>
+<body>
+    <?php
+    echo "Привет, мир!";
+    ?>
+
+    <div class="header">
+        <div class="header_flex">
+            <div class="header_item">
+                <a href="../index.html"><img src="../img/logo.png" alt="" width="100px" height="100px"></a>
+            </div>
+            <div class="header_item">
+                <h1>Black Bone</h1>
+            </div>
+        </div>
+    </div>
+    <form class="form-style" action="submit">
+        <h2>Онлайн запись в парикмахерскую</h2>
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name">
+    
+        <label for="phone">Ваш номер телефона:</label>
+        <input type="tel" id="phone" name="phone">
+    
+        <label for="datetime">Выберите дату и время:</label>
+        <input type="datetime-local" id="datetime" name="datetime">
+    
+        <label for="service">Выберите услугу:</label>
+        <select id="service" name="service">
+          <option value="cut">Стрижка</option>
+          <option value="color">Окрашивание</option>
+          <option value="style">Укладка</option>
+          <option value="styles">Контовка</option>
+          <option value="styless">Стрижка бороды</option>
+
+          <!-- Add as many as needed -->
+        </select>
+    
+        <input type="submit" value="Записаться">
+    </form>
+    <footer>
+        <p>&copy; 2024 Чёрная кость</p>
+    </footer>
+</body>
+</html>
+</body>
+</html>
